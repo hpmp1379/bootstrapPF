@@ -1,0 +1,7 @@
+header h1 img{height: 160px;}
+.sectionWrap {width: 300vw;}
+.sectionWrap > section {width: calc(300vw / 3)}
+#first {height: 100vh;background: #fc0;}
+#second {height: 100vh;background: #f60;}
+#third{height: 100vh;background: #f00;}
+.carousel-control-next, .carousel-control-prev {opacity: 1;}

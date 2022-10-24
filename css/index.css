@@ -5,7 +5,12 @@ body{
 body > img {
     z-index: -10;
 }
-.logo {text-align: center; background:linear-gradient(90deg, rgba(0,0,0,0.4),rgba(255,255,255,0.4), rgba(0,0,0,0.4))}
+.logo {
+    text-align: center; 
+    background: linear-gradient(
+        /* 90deg, rgba(0,0,0,0.4),rgba(255,255,255,0.4), rgba(0,0,0,0.4) */
+        180deg, rgba(0,0,0,1), rgba(0,0,0,0.1)
+        )}
 .logo img {height: 160px;}
 
 /* .menuBtn button{transition: color 0.2s; outline: none;}
