@@ -10,13 +10,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/test.css">
     <!-- script -->
+    <script src="https://kit.fontawesome.com/ea416fc906.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="js/test.js"></script>
 </head>
 <body>
     <header class="w-100 position-fixed top-0">
-        <div class="">
+        <div class="logo">
             <h1 class="text-center">
                 <a href="#"><img src="img/logo_white.png" alt="logo"></a>
             </h1>
@@ -24,11 +25,11 @@
     <div class="pageButtons">
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span id="prev-text"">호텔소개</span>
+            <span id="prev-text"">호텔 둘러보기</span>
             <!-- <span class="visually-hidden">Previous</span> -->
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span id="next-text">예약하기</span>
+            <span id="next-text">찾아오는길<br>및 연락처</span>
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </button>
         <div class="text">
@@ -36,18 +37,55 @@
             <div class="text-next"></div>
         </div>
     </div>
-    <div class="sectionWrap d-flex justify-content-between">
+    <div class="sectionWrap d-flex justify-content-between" id="sectionScroll">
+        <!-- Section 2 -->
         <section class="" id="second">
             <section class="container-fluid">
                 <div>bbbb</div>
             </section>
         </section>
+
+        <!-- section 1 -->
         <section class="" id="first">
-            <div>aaaaa</div>
+            <section class="container-fluid">
+                <div class="row text-center border-primary border">
+                    <div class="col">hello</div>
+                    <div class="col">hello</div>
+                </div>
+            </section>
         </section>
+
+        <!-- section 3 -->
         <section class="" id="third">
-            <div>cccc</div>
+            <section class="container-fluid"></section>
         </section>
     </div>
+        
+    <!-- Footer -->
+    <div class="ftrWrap w-100 position-fixed bottom-0 text-light container-fluid">
+        <footer class="row mx-3">
+            <div class="footer_logo col-2">
+                <h1 class="m-0">
+                    <a href="#"><img src="img/logo_white.png" alt="logo"></a>
+                </h1>
+            </div>
+            <div class="col d-flex ftrText flex-wrap justify-content-between">
+                <ul class="subMenu col-auto m-0 d-flex justify-content-between">
+                    <li><a href="#">호텔소개</a></li>
+                    <li><a href="#">예약</a></li>
+                    <li><a href="#">소식 및 뉴스</a></li>
+                    <li><a href="#">포시즌스 상점</a></li>
+                </ul>
+                <ul class="ftrSns col-auto m-0 d-flex justify-content-between">
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+                <ul class="ftrInfo w-100 m-0 d-flex">
+                    <li>©Four Seasons Hotels Limited 1997-2022. All Rights Reserved.</li>
+                    <li></li>
+                </ul>
+        </footer>
+    </footer>
 </body>
 </html>
