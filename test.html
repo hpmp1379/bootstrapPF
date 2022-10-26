@@ -32,11 +32,9 @@
             <span id="next-text">찾아오는길<br>및 연락처</span>
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </button>
-        <div class="text">
-            <div class="text-prev"></div>
-            <div class="text-next"></div>
-        </div>
     </div>
+
+    <!-- Section Wrap -->
     <div class="sectionWrap d-flex justify-content-between" id="sectionScroll">
         <!-- Section 2 -->
         <section class="" id="second">
@@ -47,26 +45,62 @@
 
         <!-- section 1 -->
         <section class="" id="first">
-            <section class="container-fluid">
-                <div class="row text-center border-primary border">
-                    <div class="col">hello</div>
-                    <div class="col">hello</div>
+            <section class="container-xxl container-sm border border-danger">
+                <div class="row">
+                    <div class="mainTitle col-12 text-light">
+                        <h2><span>환영합니다</span></h2>
+                        <p><span>다음 여행을 계획해보세요</span></p>
+                    </div>
+                    <div class="mainBooking col border-primary border d-flex justify-content-end">
+                        <div class="card text-end" style="width: 30rem;">
+                            <div class="card-body p-4">
+                              <h3 class="card-title">포시즌스 호텔 서울</h3>
+                              <h5 class="sub-text">예약하기
+                                <button type="button" class="btn btn-sm btn-dark">객실</button>
+                                <button type="button" class="btn btn-sm btn-dark">다이닝</button>
+                              </h5>
+                              <h5 class="sub-text">이미 예약 내역이 있음
+                                <button type="button" class="btn btn-sm btn-secondary">예약 조회</button>
+                                <button type="button" class="btn btn-sm btn-secondary">예약 취소</button>
+                              </h5>
+                              
+                            </div>
+                          </div>
+                    </div>
                 </div>
             </section>
         </section>
 
         <!-- section 3 -->
         <section class="" id="third">
-            <section class="container-fluid"></section>
+            <section class="container-xxl container-sm border border-danger">
+                <div class="row">
+                    <div class="mainContactImg col-6">
+                        <img src="img/background3.jpg" class="img-fluid" alt="...">
+                    </div>
+                    <div class="mainContact col-6 border-primary border d-flex justify-content-end">
+                        <div class="card w-100">
+                            <div class="card-body p-4 text-light">
+                              <h3 class="card-title mb-5">포시즌스 호텔 서울</h3>
+                              <p class="card-text"><span>주소</span>: 서울 종로구 새문안로 97 (당주동, 우편번호 03183)</p>
+                              <p class="card-text"><span>프론트데스크 전화</span>: +82 (2) 6388-5000</p>
+                              <p class="card-text"><span>고객상담</span>: +82 (2) 6399-5000</p>
+                              <p class="card-text"><span>게스트 팩스</span>: +82 (2) 6399-9999</p>
+                              
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </section>
         </section>
     </div>
         
     <!-- Footer -->
     <div class="ftrWrap w-100 position-fixed bottom-0 text-light container-fluid">
         <footer class="row mx-3">
-            <div class="footer_logo col-2">
+            <div class="footer_logo col-1">
                 <h1 class="m-0">
-                    <a href="#"><img src="img/logo_white.png" alt="logo"></a>
+                    <a href="#"><img src="img/logo_footer.png" alt="logo"></a>
                 </h1>
             </div>
             <div class="col d-flex ftrText flex-wrap justify-content-between">
@@ -81,9 +115,14 @@
                     <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
                     <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                 </ul>
-                <ul class="ftrInfo w-100 m-0 d-flex">
+                <ul class="ftrCopy m-0 d-flex col-7">
                     <li>©Four Seasons Hotels Limited 1997-2022. All Rights Reserved.</li>
-                    <li></li>
+                </ul>
+                <ul class="ftrInfo m-0 d-flex justify-content-between col-auto">
+                    <li><a href="#">법적고지</a></li>
+                    <li><a href="#">개인정보 취급방지</a></li>
+                    <li><a href="#">쿠키 환경설정</a></li>
+                    <li><a href="#">접근성 정책</a></li>
                 </ul>
         </footer>
     </footer>
