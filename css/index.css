@@ -1,27 +1,89 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
 
-body{
-    overflow-y:hidden;
-}
-body > img {
-    z-index: -10;
-}
-.logo {
-    text-align: center; 
-    background: linear-gradient(
-        /* 90deg, rgba(0,0,0,0.4),rgba(255,255,255,0.4), rgba(0,0,0,0.4) */
-        180deg, rgba(0,0,0,1), rgba(0,0,0,0.1)
-        )}
-.logo img {height: 160px;}
+/* hide overflowing .sectionWrap */
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 14px;
+    overflow-x: hidden; }
+a {text-decoration: none; color: #ccc;}
+a:hover {color: inherit;}
+ul {list-style: none;}
+ul > li {line-height: 30px;}
+h1,h2,h3,h4,h5 {font-weight: 700;}
+h2 {font-size: 72px;}
 
-/* .menuBtn button{transition: color 0.2s; outline: none;}
-.menuBtn button:hover {color: #fff;}
-.menuBtn button {border: none !important;}
-i {font-size: 40px;} */
-.navbar-toggler {border: none;}
-.navbar-toggler:focus {box-shadow: none;}
-.carousel-item { overflow-y:hidden;}
-.carousel-item img {object-fit: cover; height: 1080px;}
-button span {
-    text-shadow: 0 1px 1px rgba(0,0,0,1);
-    text-shadow: inset 0 1px 1px rgba(255,255,255,1);
+
+/* header ---------------*/
+header {
+    display: none;
+    /* box-shadow: inset 1px 5px 10px rgba(0,0,0,0.8); */
+    background: linear-gradient(180deg, rgba(0,0,0,0.8), rgba(0,0,0,0));}
+header h1 img{height: 160px;}
+/* left and right button */
+.pageButtons button {
+    font-size: 1.5em;
+    text-shadow: 1px 1px 0 black,
+                 0px 0px 5px black,
+                 1px 1px 5px black;
+    transition: color 0.3s;}
+.pageButtons button:hover {color: rgba(255,255,255,0.8)}
+.carousel-control-next, .carousel-control-prev {
+    width: initial;
+    opacity: 1; min-height: 160px;
 }
+
+/* section --------------- */
+ /* section 1 = -100vw
+    section 2 = 0vw
+    section 3 = 100vw */
+.sectionWrap {
+    width: 300vw; 
+    margin-left: -100vw;}
+.sectionWrap > section {
+    width: calc(300vw / 3);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;}
+/* section background images */
+#first {height: 100vh;background: url(../img/background.jpg);}
+#second {height: 100vh;background: url(../img/background2.jpg);}
+#third{height: 100vh;background: url(../img/background3.jpg);}
+
+/* content section */
+section > section {margin-top: 160px;} /* avoid overlapping with headerlogo */
+/* sliding title */
+.mainTitle h2 {
+    height: 160px;
+    padding-top: 80px;
+    overflow-y: hidden;}
+.mainTitle h2 span{
+    display: block;
+    margin-top: 80px; 
+    transition: margin 1s ease-in-out;}
+.mainTitle p {
+    height: 40px; font-size: 18px;
+    margin-top: 20px; 
+    overflow-y:hidden;}
+.mainTitle p span {
+    display: block;
+    margin-top: 40px;
+    transition: margin 1s ease-in;}
+.mainBooking,
+    .mainContact, .mainContactImg {margin-top: 100px;}
+.mainBooking h5{margin-top: 40px;}
+.mainBooking h5 button {width: 100px;}
+.card {background: rgba(255,255,255,0.9);}
+.mainContact .card {background: rgba(0,0,0,0.8)}
+.mainContact p {margin-top: 20px;}
+.mainContact span {font-weight: 900;}
+
+/* footer ---------------*/
+.ftrWrap {background: #000;}
+footer h1 {text-align: center;}
+footer h1 img{height: 1em;}
+.subMenu {width: 500px;}
+.ftrSns {width: 120px;}
+.ftrInfo {width: 500px;}
+.ftrInfo li a{font-size: 13px; color: #555;}
+.ftrInfo li a:hover{ text-decoration: underline;}
