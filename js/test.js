@@ -6,6 +6,7 @@ $(function(){
     setTimeout(function(){
         $('.mainTitle p span').css({'margin-top':0});
     },1000)
+    
     $('.logo a img').on('click',function(){
         $('#sectionScroll').animate({'margin-left': -100+'vw'}, 500);
     })
