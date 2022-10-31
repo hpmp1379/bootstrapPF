@@ -77,6 +77,8 @@ section > section {margin-top: 160px;} /* avoid overlapping with headerlogo */
 .mainContact .card {background: rgba(0,0,0,0.8)}
 .mainContact p {margin-top: 20px;}
 .mainContact span {font-weight: 900;}
+/* Section 2 */
+
 
 /* footer ---------------*/
 .ftrWrap {background: #000;}
